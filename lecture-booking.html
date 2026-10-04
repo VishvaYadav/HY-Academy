@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lecture Booking | H&Y Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+
+            <div class="logo">
+                H&Y Academy
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="batches.html">Batches</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <select class="language-select">
+                <option>English</option>
+                <option>हिंदी</option>
+                <option>ગુજરાતી</option>
+            </select>
+
+        </div>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <div class="container">
+
+            <h1>Lecture Booking</h1>
+
+            <p>
+                Request a lecture according to the student's academic
+                requirements and preferred schedule.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING FORM -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="form-container">
+
+                <h2>Book a Lecture</h2>
+
+                <p class="section-description">
+                    Fill in the details below to submit a lecture request.
+                </p>
+
+
+                <form id="lectureForm">
+
+
+                    <!-- STUDENT NAME -->
+                    <div class="form-group">
+
+                        <label for="lectureStudentName">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lectureStudentName"
+                            name="studentName"
+                            placeholder="Enter student name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- MOBILE -->
+                    <div class="form-group">
+
+                        <label for="lecturePhone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="lecturePhone"
+                            name="phone"
+                            placeholder="Enter mobile number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- STANDARD -->
+                    <div class="form-group">
+
+                        <label for="lectureStandard">
+                            Standard / Class
+                        </label>
+
+                        <select
+                            id="lectureStandard"
+                            name="standard"
+                            required
+                        >
+
+                            <option value="">
+                                Select Standard
+                            </option>
+
+                            <option>Standard 1</option>
+                            <option>Standard 2</option>
+                            <option>Standard 3</option>
+                            <option>Standard 4</option>
+                            <option>Standard 5</option>
+                            <option>Standard 6</option>
+                            <option>Standard 7</option>
+                            <option>Standard 8</option>
+                            <option>Standard 9</option>
+                            <option>Standard 10</option>
+                            <option>Standard 11 - Science</option>
+                            <option>Standard 12 - Science</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- BOARD -->
+                    <div class="form-group">
+
+                        <label for="lectureBoard">
+                            Board
+                        </label>
+
+                        <select id="lectureBoard" name="board">
+
+                            <option value="">
+                                Select Board
+                            </option>
+
+                            <option>GSEB</option>
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                            <option>Not Applicable</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SUBJECT -->
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <select id="subject" name="subject" required>
+
+                            <option value="">
+                                Select Subject
+                            </option>
+
+                            <option>Mathematics</option>
+                            <option>Science</option>
+                            <option>Physics</option>
+                            <option>Chemistry</option>
+                            <option>Biology</option>
+                            <option>English</option>
+                            <option>Computer Science</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- TOPIC -->
+                    <div class="form-group">
+
+                        <label for="topic">
+                            Topic / Chapter
+                        </label>
+
+                        <input
+                            type="text"
+                            id="topic"
+                            name="topic"
+                            placeholder="Enter topic or chapter"
+                        >
+
+                    </div>
+
+
+                    <!-- DATE -->
+                    <div class="form-group">
+
+                        <label for="lectureDate">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="lectureDate"
+                            name="lectureDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- TIME -->
+                    <div class="form-group">
+
+                        <label for="lectureTime">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="lectureTime"
+                            name="lectureTime"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- FORMAT -->
+                    <div class="form-group">
+
+                        <label for="lectureFormat">
+                            Learning Format
+                        </label>
+
+                        <select
+                            id="lectureFormat"
+                            name="learningFormat"
+                            required
+                        >
+
+                            <option value="">
+                                Select Format
+                            </option>
+
+                            <option>Group Batch</option>
+                            <option>Personal Batch 1</option>
+                            <option>Personal Batch 2</option>
+                            <option>Home Tuition</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MEDIUM -->
+                    <div class="form-group">
+
+                        <label for="lectureMedium">
+                            Preferred Medium
+                        </label>
+
+                        <select id="lectureMedium" name="medium">
+
+                            <option value="">
+                                Select Medium
+                            </option>
+
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Gujarati</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="form-group">
+
+                        <label for="lectureMessage">
+                            Additional Requirements
+                        </label>
+
+                        <textarea
+                            id="lectureMessage"
+                            name="message"
+                            rows="5"
+                            placeholder="Enter any additional requirements..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+                    <button type="submit" class="btn">
+                        Submit Lecture Request
+                    </button>
+
+                </form>
+
+
+                <div id="lectureMessage" class="form-message"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMATION -->
+    <section class="section">
+
+        <div class="container">
+
+            <h2>How Lecture Booking Will Work</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <h3>1. Submit Request</h3>
+
+                    <p>
+                        Provide the student's academic and lecture
+                        requirements through the booking form.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>2. Request Review</h3>
+
+                    <p>
+                        The academy can review the requested subject,
+                        topic, date and preferred time.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>3. Confirmation</h3>
+
+                    <p>
+                        The requested lecture can be confirmed according
+                        to availability.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>Looking for Regular Coaching?</h2>
+
+            <p>
+                Explore our courses and learning formats for regular
+                academic preparation.
+            </p>
+
+            <div class="center-button">
+
+                <a href="courses.html" class="btn">
+                    View Courses
+                </a>
+
+                <a href="batches.html" class="btn">
+                    View Batches
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 H&Y Academy. All Rights Reserved.
+            </p>
+
+            <p>
+                Coaching for School, Science & Competitive Preparation
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

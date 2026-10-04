@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Demo | H&Y Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container nav-container">
+
+            <div class="logo">
+                H&Y Academy
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="courses.html">Courses</a>
+                <a href="batches.html">Batches</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <select class="language-select">
+                <option>English</option>
+                <option>हिंदी</option>
+                <option>ગુજરાતી</option>
+            </select>
+
+        </div>
+    </header>
+
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+
+        <div class="container">
+
+            <h1>Book a Demo Class</h1>
+
+            <p>
+                Submit your details and let H&Y Academy understand
+                your learning requirements.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEMO FORM -->
+    <section class="section">
+
+        <div class="container">
+
+            <div class="form-container">
+
+                <h2>Demo Class Request</h2>
+
+                <p class="section-description">
+                    Please provide the student's details below.
+                </p>
+
+
+                <form id="demoForm">
+
+                    <!-- STUDENT NAME -->
+                    <div class="form-group">
+
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            name="studentName"
+                            placeholder="Enter student name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PARENT NAME -->
+                    <div class="form-group">
+
+                        <label for="parentName">
+                            Parent / Guardian Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="parentName"
+                            name="parentName"
+                            placeholder="Enter parent / guardian name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter mobile number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email address"
+                        >
+
+                    </div>
+
+
+                    <!-- STANDARD -->
+                    <div class="form-group">
+
+                        <label for="standard">
+                            Standard / Class
+                        </label>
+
+                        <select id="standard" name="standard" required>
+
+                            <option value="">
+                                Select Standard
+                            </option>
+
+                            <option>Standard 1</option>
+                            <option>Standard 2</option>
+                            <option>Standard 3</option>
+                            <option>Standard 4</option>
+                            <option>Standard 5</option>
+                            <option>Standard 6</option>
+                            <option>Standard 7</option>
+                            <option>Standard 8</option>
+                            <option>Standard 9</option>
+                            <option>Standard 10</option>
+                            <option>Standard 11 - Science</option>
+                            <option>Standard 12 - Science</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- BOARD -->
+                    <div class="form-group">
+
+                        <label for="board">
+                            Board
+                        </label>
+
+                        <select id="board" name="board">
+
+                            <option value="">
+                                Select Board
+                            </option>
+
+                            <option>GSEB</option>
+                            <option>CBSE</option>
+                            <option>ICSE</option>
+                            <option>Not Applicable</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- COURSE -->
+                    <div class="form-group">
+
+                        <label for="course">
+                            Course / Preparation
+                        </label>
+
+                        <select id="course" name="course">
+
+                            <option value="">
+                                Select Course
+                            </option>
+
+                            <option>School Coaching</option>
+                            <option>11–12 Science - Group A</option>
+                            <option>11–12 Science - Group B</option>
+                            <option>JEE</option>
+                            <option>NEET</option>
+                            <option>GUJCET</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MEDIUM -->
+                    <div class="form-group">
+
+                        <label for="medium">
+                            Preferred Medium
+                        </label>
+
+                        <select id="medium" name="medium">
+
+                            <option value="">
+                                Select Medium
+                            </option>
+
+                            <option>English</option>
+                            <option>Hindi</option>
+                            <option>Gujarati</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- BATCH -->
+                    <div class="form-group">
+
+                        <label for="batch">
+                            Preferred Learning Format
+                        </label>
+
+                        <select id="batch" name="batch">
+
+                            <option value="">
+                                Select Learning Format
+                            </option>
+
+                            <option>Group Batch</option>
+                            <option>Personal Batch 1</option>
+                            <option>Personal Batch 2</option>
+                            <option>Home Tuition</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Additional Requirements
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell us about the student's learning requirements..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+                    <button type="submit" class="btn">
+                        Submit Demo Request
+                    </button>
+
+                </form>
+
+
+                <!-- SUCCESS MESSAGE -->
+                <div id="demoMessage" class="form-message"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>Need More Information?</h2>
+
+            <p>
+                If you have questions about courses, batches or fees,
+                contact H&Y Academy.
+            </p>
+
+            <div class="center-button">
+
+                <a href="courses.html" class="btn">
+                    View Courses
+                </a>
+
+                <a href="contact.html" class="btn">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 H&Y Academy. All Rights Reserved.
+            </p>
+
+            <p>
+                Coaching for School, Science & Competitive Preparation
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
