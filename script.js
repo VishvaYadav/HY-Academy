@@ -33,7 +33,7 @@ document.querySelectorAll(".navbar a").forEach((link) => {
 // Where the backend runs. Leave as null to use WhatsApp only.
 // When you put the backend online, set this to its address,
 // e.g. "https://om-yadav-tuition-api.onrender.com"
-const BACKEND_URL = "https://om-yadav-tuition-api.onrender.com";
+   const BACKEND_URL = "https://om-yadav-tuition-api-onrender-com.onrender.com";
 
 function getApiBase() {
     if (location.port === "5000") return "";                       // served by the backend itself
