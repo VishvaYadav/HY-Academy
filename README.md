@@ -1,2 +1,2 @@
 # HY-Academy
-H&amp;Y Academy Coaching Centre Management and Lecture Booking System
+Om Yadav Personal Tuition Management and Lecture Booking System
