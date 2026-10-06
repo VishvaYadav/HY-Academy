@@ -849,3 +849,56 @@ button { border: none; cursor: pointer; font-family: inherit; }
     max-width: none;
     margin: 0;
 }
+
+/* ================= LANGUAGES ================= */
+
+/* Copy of the language selector inside the phone menu */
+.nav-language {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .nav-language {
+        display: block;
+        padding: 14px 0 4px;
+    }
+
+    .nav-language .language-select {
+        display: block;
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
+
+/* Gujarati: Hind Vadodara has Gujarati letters, so use it for headings too */
+:lang(gu) h1,
+:lang(gu) h2,
+:lang(gu) h3,
+:lang(gu) .logo-main,
+:lang(gu) .hero h1 .hero-name-sub,
+:lang(gu) .teacher-subject {
+    font-family: "Hind Vadodara", "Nirmala UI", sans-serif;
+    font-style: normal;
+}
+
+/* Hindi: Devanagari fonts (loaded only when Hindi is chosen) */
+:lang(hi) body {
+    font-family: "Hind", "Nirmala UI", "Mangal", sans-serif;
+}
+
+:lang(hi) h1,
+:lang(hi) h2,
+:lang(hi) h3,
+:lang(hi) .logo-main,
+:lang(hi) .hero h1 .hero-name-sub,
+:lang(hi) .teacher-subject {
+    font-family: "Noto Serif Devanagari", "Nirmala UI", serif;
+    font-style: normal;
+}
+
+/* Gujarati and Hindi letters sit taller; give lines a little more room */
+:lang(gu) body,
+:lang(hi) body {
+    line-height: 1.75;
+}
