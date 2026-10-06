@@ -1,7 +1,7 @@
-// Om Yadav Personal Tuition — site script
+// Om Yadav Group & Personal Tuition — site script
 
 const WHATSAPP_NUMBER = "916353304069"; // country code + number, no "+"
-const TUITION_NAME = "Om Yadav Personal Tuition";
+const TUITION_NAME = "Om Yadav Group & Personal Tuition";
 
 // ---------- Mobile menu ----------
 const menuToggle = document.querySelector(".menu-toggle");
