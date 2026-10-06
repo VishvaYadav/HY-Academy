@@ -819,3 +819,33 @@ button { border: none; cursor: pointer; font-family: inherit; }
     html { scroll-behavior: auto; }
     * { transition: none !important; }
 }
+
+/* ================= OM SYMBOL ================= */
+
+:root {
+    --om-red: #d81e1e;        /* on white and light backgrounds */
+    --om-red-light: #ff5c4d;  /* on dark green backgrounds */
+}
+
+.om {
+    font-family: "Noto Serif Devanagari", "Nirmala UI", "Mangal", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--om-red);
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.hero .om,
+.page-header .om,
+.site-footer .om {
+    color: var(--om-red-light);
+}
+
+/* page headers style every span as a block; keep the symbol inline with the name */
+.page-header span.om {
+    display: inline;
+    font-size: inherit;
+    max-width: none;
+    margin: 0;
+}
